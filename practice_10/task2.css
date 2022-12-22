@@ -1,0 +1,25 @@
+body{
+    background: wheat;
+}
+
+img
+{
+    width: 200px;
+    height: auto;
+}
+
+.plus
+{
+    background-color: rgb(33, 226, 33);
+}
+
+.minus
+{
+    background-color: red;
+}
+
+.button-primary {
+    width: 30px;
+    height: 30px;
+    border-radius:15%;
+}

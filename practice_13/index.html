@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Practice_13</title>
+</head>
+<body>
+    <fieldset id="contents">
+        <!-- <legend>#contents</legend> -->
+        <p>
+          Посетить <a href="https://wikipedia.org">Википедию</a> или посетить сайт <a href="https://www.kinopoisk.ru/">Кинопоиска</a>?
+        </p>
+    </fieldset>
+    <p><img id="largeImg" src="img/pic1.jpg" alt="Large image"></p>
+
+    <ul id="thumbs">
+      <!-- браузер показывает небольшую встроенную подсказку из атрибута "title" при наведении курсора на текст -->
+      <li>
+        <a href="img/pic2.jpg" title="Image 2"><img src="img/pic2.jpg""></a>
+      </li>
+      <li>
+        <a href="img/pic3.jpg" title="Image 3"><img src="img/pic3.jpg"></a>
+      </li>
+      <li>
+        <a href="img/pic4.jpg" title="Image 4"><img src="img/pic4.jpg"></a>
+      </li>
+      <li>
+        <a href="img/pic5.jpg" title="Image 5"><img src="img/pic5.jpg"></a>
+      </li>
+      <li>
+        <a href="img/pic6.jpg" title="Image 6"><img src="img/pic6.jpg"></a>
+      </li>
+    </ul>
+
+    <h2>Для выделения элемента кликните на него</h2>
+    <br>
+
+    <ul id="ul">
+        <li>Гатагов</li>
+        <li>Глушаков</li>
+        <li>Кокорин</li>
+        <li>Мамаев</li>
+        <li>Zболотный</li>
+    </ul>
+
+
+    <div id="slider" class="slider">
+        <div class="thumb"></div>
+    </div>
+
+    <div id="myFigure" all_cost=0 ondrop="drop(event)" ondragover="allowDragAndDrop(event)">
+      <img src="" alt="">
+    </div>gif
+    <img id="myImage" cost=500 src="https://media.tenor.com/5TOEO--Gjt4AAAAM/neymar-world-cup.gif" draggable="true" ondragstart="drag(event)" width="50%" style="margin:1%;">
+    <img id="myImage2" cost=500 src="https://media.tenor.com/5TOEO--Gjt4AAAAM/neymar-world-cup.gif" draggable="true" ondragstart="drag(event)" width="50%" style="margin:1%;">
+    <img id="myImage3" cost=500 src="https://media.tenor.com/5TOEO--Gjt4AAAAM/neymar-world-cup.gif" draggable="true" ondragstart="drag(event)" width="50%" style="margin:1%;">
+    <img id="myImage4" cost=300 src="https://media.tenor.com/5TOEO--Gjt4AAAAM/neymar-world-cup.gif" draggable="true" ondragstart="drag(event)" width="50%" style="margin:1%;">
+    <img id="myImage5" cost=300 src="https://media.tenor.com/5TOEO--Gjt4AAAAM/neymar-world-cup.gif" draggable="true" ondragstart="drag(event)" width="50%" style="margin:1%;">
+
+    <script src="script.js"></script>
+</body>
+</html>

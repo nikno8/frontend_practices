@@ -1,0 +1,188 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+body{
+    background-color: black;
+}
+
+.title{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+
+.notif-wrapper{
+    padding: 1rem;
+    display: flex;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+.logo {
+    width: 4rem;
+}
+.notification {
+    min-width: 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.img__notification {
+    cursor: pointer;
+    align-self: end;
+    width: 4rem;
+}
+.text__notification {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+.counter{
+    position: absolute;
+    background-color: red;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+.text__notification li{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: wheat;
+}
+
+.container {
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.element
+{
+    color:blue;
+    background-color: bisque;
+    margin:2em;
+    flex: 1 1 10%;
+}
+
+
+
+.button{
+    font-size: 2rem;
+    margin: 2rem 3rem;
+    padding: 1rem;
+    background-color: red;
+    color:white;
+}
+
+.sort__button
+{
+    background-color: aquamarine;
+    width: 10em;
+}
+img{
+    width: 100%;
+}

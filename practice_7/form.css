@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 16px;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 200;
+}
+
+body{
+    background-color: #111111;
+    color: aliceblue;
+}
+
+.title{
+    text-align: center;
+    margin: 2rem 0;
+}
+.title_h1{
+    font-size: 4rem;
+}
+.title_h2{
+    font-size: 3rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem 1rem;
+    background-color: #111111;
+}
+
+
+.form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(67, 71, 78, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(73, 73, 73, 0.5);
+    border-radius: 1rem;
+    max-width: 40%;
+    margin: 5rem auto 2rem auto;
+    padding: 3rem 2rem;
+}
+
+
+.title__login{
+    position: relative;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+
+.title__login::before{
+    position: absolute;
+    content: '';
+    top: 2rem;
+    left: 0;
+    height: 0.2rem;
+    width: 5.2rem;
+    border-radius: 3px;
+    background-color: white;
+}
+
+
+.input__box{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+
+.input__box input{
+    font-size: 1.5rem;
+    color: rgb(157, 153, 153);
+    background-color: rgba(141, 141, 141, 0.5);
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+
+.input__box input::placeholder{
+    font-size: 1.5rem;
+    color: rgba(231, 231, 231, 1);
+}
+
+
+
+.input__box input[type="submit"]{
+    cursor: pointer;
+    max-width: 40%;
+    background-color: white;
+    font-weight: 700;
+    color: rgb(67, 71, 78);
+}
+
+
+
+.forget{
+    font-size: 1.2rem;
+    color: white;
+    margin: 0.2rem 0;
+}
+
+
+
+.forget a{
+    color: orange;
+}
+
+
+
+.square-2{
+    position: absolute;
+    border-radius: 1rem;
+    background-color: rgba(67, 71, 78, 0.7);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(73, 73, 73, 0.5);
+    animation: square_login 10s calc(-1s * var(--i)) linear infinite;
+}
+
+
+
+.square-2:nth-child(1){
+    top: 17%;
+    right: 27%;
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+.square-2:nth-child(2){
+    top: 50%;
+    left: 24%;
+    width: 7rem;
+    height: 7rem;
+    z-index: 2;
+}
+
+
+.square-2:nth-child(3){
+    top: 20%;
+    left: 45%;
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+.square-2:nth-child(4){
+    top: 85%;
+    right: 45%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+
+
+.square-2:nth-child(5){
+    top: 70%;
+    right: 27%;
+    width: 3rem;
+    height: 3rem;
+    z-index: 2;
+}
+
+
+.container__login{
+    position: relative;
+}
+
+
+@keyframes square_login {
+    0%, 100%{
+        transform: translateY(-2rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
+}

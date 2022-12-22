@@ -1,0 +1,201 @@
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    font-size:14px;
+    font-weight: 400;
+    font-family: Montserrat;
+    background: url(https://wallpapertag.com/wallpaper/full/2/5/8/438278-free-download-black-steel-background-1920x1200-for-ios.jpg) no-repeat;
+    background-size: cover;
+}
+
+._container
+{
+    max-width: 1046px;
+    margin:0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+.cards-wrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box .content {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    transform: 0.5s;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.box a{
+    border: solid 1px white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.box::before {
+    content: ' ';
+    position: absolute;
+    top: -70px;
+    left: 45px;
+    width: 60%;
+    height: 150%;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+   
+.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+}
+   
+.box:hover:before,
+.box:hover:after {
+    transform: skewX(0deg) scaleX(1.3);
+}
+   
+.box1:before,
+.box1:after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058)   
+}
+
+.box2:before,
+.box2:after {
+    background: linear-gradient(315deg, purple,blue)   
+}
+
+.box3:before,
+.box3:after {
+    background: linear-gradient(315deg, rgb(79, 255, 9),rgba(3, 196, 240, 0.993))   
+}
+
+
+.box span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+}
+   
+.box span::before {
+    content: '';
+    position: absolute;
+    display: none;
+    top: -40px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.1s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+}
+   
+
+   
+.box span::after {
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: -40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    animation-delay: -1s;
+}
+   
+
+   
+.box .content {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    transform: 0.5s;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+.box .content h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.box:hover>span::after
+{
+    display: block;
+    animation: square_login 10s;
+}
+
+.box:hover>span::before
+{
+    display: block;
+    animation: square_login 10s;
+}
+
+@keyframes square_login {
+    0%, 100%{
+        transform: translateY(-2rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
+}
+   
