@@ -1,0 +1,56 @@
+textarea::placeholder
+{
+    color:rgb(26, 164, 65);
+    font-size: 14;
+}
+
+
+.about
+{
+    margin-bottom: 1rem;
+    width: 30%;
+}
+
+
+.about input
+{
+    margin-bottom:1em;
+}
+
+input
+{
+    border: 1px solid;
+    background-color: antiquewhite;
+}
+iframe
+{
+    
+   margin: 30px;
+}
+
+body
+{
+    background-color:rgb(114, 106, 106);
+}
+
+.review
+{
+    margin: 20px;
+}
+
+button
+{
+    background-color:rgba(228, 144, 10, 0.978);
+   
+}
+
+input:focus
+{
+    background: rgb(190, 190, 36); 
+    border: 1px solid #15afdd;
+}
+
+.video-wrapper
+{
+    text-align: center;
+}
