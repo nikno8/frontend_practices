@@ -1,0 +1,65 @@
+.notification {
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem;
+    border: 1px solid black;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+  
+.welcome {
+    background: orange;
+    color: white;
+}
+
+#neymar
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+#field
+{
+    width: 300px;
+    border: 5px solid white;
+    background-color: green;
+    position: relative;
+    height: 200px;
+}
+
+body
+{
+    background-color: aquamarine;
+}
+
+.remove-button
+{
+    position: absolute;
+    display: block;
+    color: black;
+}
+
+.pane {
+    background: #edf5e1;
+    padding: 10px 20px 10px;
+    border-top: solid 2px #c4df9b;
+    position: relative;
+  }
+  
+.remove-button {
+    position: absolute;
+    font-size: 110%;
+    top: 0;
+    color: darkred;
+    right: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
